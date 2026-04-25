@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandika Haresvara Paryana — Creative Developer</title>
+    <meta name="description" content="Portfolio of Nandika Haresvara Paryana, a Front-End Software Engineer turning complex problems into elegant, scalable code.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Custom Interactive Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-text">View</div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-line"></div>
+            <span class="preloader-text">Loading Experience</span>
+            <span class="preloader-counter" id="preloaderCounter">0</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#hero" class="nav-logo" data-cursor="pointer">NHP<span class="accent-dot">.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" data-cursor="pointer"><span class="nav-index">01</span>About</a>
+                <a href="#work" class="nav-link" data-cursor="pointer"><span class="nav-index">02</span>Work</a>
+                <a href="#experience" class="nav-link" data-cursor="pointer"><span class="nav-index">03</span>Experience</a>
+                <a href="#contact" class="nav-link" data-cursor="pointer"><span class="nav-index">04</span>Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" data-cursor="pointer" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#about" class="mobile-link" data-cursor="pointer">About</a>
+            <a href="#work" class="mobile-link" data-cursor="pointer">Work</a>
+            <a href="#experience" class="mobile-link" data-cursor="pointer">Experience</a>
+            <a href="#contact" class="mobile-link" data-cursor="pointer">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-gradient-orb hero-orb-1" data-parallax data-speed="0.03"></div>
+            <div class="hero-gradient-orb hero-orb-2" data-parallax data-speed="0.05"></div>
+            <div class="hero-gradient-orb hero-orb-3" data-parallax data-speed="0.02"></div>
+
+            <div class="hero-content">
+                <div class="hero-top">
+                    <p class="hero-label reveal-text" data-delay="0.6">Front-End Software Engineer</p>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line reveal-text" data-delay="0.8">
+                        <span class="hero-title-word">Nandika</span>
+                    </span>
+                    <span class="hero-title-line reveal-text" data-delay="1.0">
+                        <span class="hero-title-word">Haresvara</span>
+                    </span>
+                    <span class="hero-title-line reveal-text" data-delay="1.2">
+                        <span class="hero-title-word gradient-text">Paryana</span>
+                    </span>
+                </h1>
+                <div class="hero-bottom">
+                    <p class="hero-desc reveal-text" data-delay="1.4">Turning complex problems into<br>elegant, scalable code.</p>
+                    <div class="hero-stats reveal-text" data-delay="1.6">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-count="2400">0</span>
+                            <span class="hero-stat-label">Commits/Year</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-count="15">0</span>
+                            <span class="hero-stat-label">Apps Deployed</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-count="99.9" data-suffix="%">0</span>
+                            <span class="hero-stat-label">System Uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator reveal-text" data-delay="2.0">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-index scroll-reveal">01</span>
+                    <h2 class="section-title scroll-reveal">About<br><span class="gradient-text">Me</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-lead scroll-reveal">I am a dedicated Software Engineering student at SMK TI Bali Global Denpasar with a profound passion for building seamless digital experiences.</p>
+                        <p class="about-body scroll-reveal">Bridging the gap between technical functionality and aesthetic excellence, I specialize in creating modern, user-centric designs and robust web applications.</p>
+                    </div>
+                    <div class="about-skills">
+                        <div class="skill-column scroll-reveal" data-stagger="0">
+                            <h3 class="skill-title">Frontend</h3>
+                            <ul class="skill-list">
+                                <li>React.js</li>
+                                <li>Next.js</li>
+                                <li>Tailwind CSS</li>
+                                <li>TypeScript</li>
+                                <li>Redux</li>
+                            </ul>
+                        </div>
+                        <div class="skill-column scroll-reveal" data-stagger="1">
+                            <h3 class="skill-title">Backend</h3>
+                            <ul class="skill-list">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                                <li>Redis</li>
+                                <li>GraphQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-column scroll-reveal" data-stagger="2">
+                            <h3 class="skill-title">Architecture</h3>
+                            <ul class="skill-list">
+                                <li>Microservices</li>
+                                <li>RESTful API</li>
+                                <li>Unit Testing</li>
+                                <li>OAuth 2.0</li>
+                                <li>WebSockets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Marquee -->
+        <div class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>React.js</span><span class="marquee-dot"></span>
+                    <span>Next.js</span><span class="marquee-dot"></span>
+                    <span>TypeScript</span><span class="marquee-dot"></span>
+                    <span>Node.js</span><span class="marquee-dot"></span>
+                    <span>PostgreSQL</span><span class="marquee-dot"></span>
+                    <span>GraphQL</span><span class="marquee-dot"></span>
+                    <span>WebSockets</span><span class="marquee-dot"></span>
+                    <span>Microservices</span><span class="marquee-dot"></span>
+                    <span>React.js</span><span class="marquee-dot"></span>
+                    <span>Next.js</span><span class="marquee-dot"></span>
+                    <span>TypeScript</span><span class="marquee-dot"></span>
+                    <span>Node.js</span><span class="marquee-dot"></span>
+                    <span>PostgreSQL</span><span class="marquee-dot"></span>
+                    <span>GraphQL</span><span class="marquee-dot"></span>
+                    <span>WebSockets</span><span class="marquee-dot"></span>
+                    <span>Microservices</span><span class="marquee-dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work / Projects Section -->
+        <section class="section work" id="work">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-index scroll-reveal">02</span>
+                    <h2 class="section-title scroll-reveal">Featured<br><span class="gradient-text">Work</span></h2>
+                </div>
+
+                <div class="projects">
+                    <article class="project-card scroll-reveal" data-cursor="view">
+                        <div class="project-card-inner">
+                            <div class="project-visual">
+                                <div class="project-visual-gradient" style="--grad-1: #3b82f6; --grad-2: #8b5cf6;"></div>
+                                <span class="project-num">01</span>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">E-Commerce</span>
+                                <h3 class="project-name">OmniCart</h3>
+                                <p class="project-desc">A high-traffic online shopping platform featuring multi-payment gateway integration.</p>
+                                <div class="project-metrics">
+                                    <div class="metric"><span class="metric-val">10k</span><span class="metric-label">req/sec</span></div>
+                                    <div class="metric"><span class="metric-val">0.8s</span><span class="metric-label">load time</span></div>
+                                    <div class="metric"><span class="metric-val">5</span><span class="metric-label">gateways</span></div>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Next.js</span><span>Redis</span><span>SSR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card scroll-reveal" data-cursor="view">
+                        <div class="project-card-inner">
+                            <div class="project-visual">
+                                <div class="project-visual-gradient" style="--grad-1: #06b6d4; --grad-2: #3b82f6;"></div>
+                                <span class="project-num">02</span>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">SaaS</span>
+                                <h3 class="project-name">Streamline Chat</h3>
+                                <p class="project-desc">Professional-grade instant messaging for internal team collaboration with E2E encryption.</p>
+                                <div class="project-metrics">
+                                    <div class="metric"><span class="metric-val">&lt;100ms</span><span class="metric-label">latency</span></div>
+                                    <div class="metric"><span class="metric-val">E2EE</span><span class="metric-label">encrypted</span></div>
+                                    <div class="metric"><span class="metric-val">Real-time</span><span class="metric-label">indicators</span></div>
+                                </div>
+                                <div class="project-tech">
+                                    <span>Socket.io</span><span>WebSockets</span><span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card scroll-reveal" data-cursor="view">
+                        <div class="project-card-inner">
+                            <div class="project-visual">
+                                <div class="project-visual-gradient" style="--grad-1: #8b5cf6; --grad-2: #ec4899;"></div>
+                                <span class="project-num">03</span>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Logistics</span>
+                                <h3 class="project-name">SupplyNode API</h3>
+                                <p class="project-desc">Robust backend API designed for enterprise-scale warehouse management.</p>
+                                <div class="project-metrics">
+                                    <div class="metric"><span class="metric-val">500%</span><span class="metric-label">speed boost</span></div>
+                                    <div class="metric"><span class="metric-val">OpenAPI</span><span class="metric-label">documented</span></div>
+                                    <div class="metric"><span class="metric-val">M+</span><span class="metric-label">data entries</span></div>
+                                </div>
+                                <div class="project-tech">
+                                    <span>PostgreSQL</span><span>Indexing</span><span>Swagger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-index scroll-reveal">03</span>
+                    <h2 class="section-title scroll-reveal">Career<br><span class="gradient-text">Journey</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 — Present</span>
+                            <h3 class="timeline-role">Senior Developer</h3>
+                            <span class="timeline-company">PT Kreatif Kode Indonesia · Jakarta</span>
+                            <ul class="timeline-details">
+                                <li>Spearheaded architectural migration from monolithic to Microservices.</li>
+                                <li>Reduced AWS infrastructure overhead by 15%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018 — 2020</span>
+                            <h3 class="timeline-role">Web Developer</h3>
+                            <span class="timeline-company">Tech Solution Hub · Surabaya</span>
+                            <ul class="timeline-details">
+                                <li>Developed 10+ custom dashboards for logistics clients.</li>
+                                <li>Enforced rigorous quality assurance with Jest frameworks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="testimonials">
+                    <h3 class="testimonials-label scroll-reveal">What People Say</h3>
+                    <div class="testimonials-grid">
+                        <blockquote class="testi-card scroll-reveal" data-stagger="0" data-cursor="pointer">
+                            <div class="testi-card-glow"></div>
+                            <svg class="testi-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2h-2c-1.1 0-2-.9-2-2V8zm-6 0c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2H6c-1.1 0-2-.9-2-2V8z" fill="url(#quoteGrad1)"/>
+                                <defs><linearGradient id="quoteGrad1" x1="0" y1="0" x2="14" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#6c63ff"/><stop offset="1" stop-color="#00d4ff"/></linearGradient></defs>
+                            </svg>
+                            <p class="testi-text">"He doesn't just write code; he provides sophisticated architectural solutions."</p>
+                            <div class="testi-author">
+                                <div class="testi-avatar" style="--av-grad: linear-gradient(135deg, #6c63ff, #00d4ff);">JD</div>
+                                <div>
+                                    <strong>John Doe</strong>
+                                    <span>CTO at RetailCorp</span>
+                                </div>
+                            </div>
+                        </blockquote>
+
+                        <blockquote class="testi-card scroll-reveal" data-stagger="1" data-cursor="pointer">
+                            <div class="testi-card-glow"></div>
+                            <svg class="testi-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2h-2c-1.1 0-2-.9-2-2V8zm-6 0c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2H6c-1.1 0-2-.9-2-2V8z" fill="url(#quoteGrad2)"/>
+                                <defs><linearGradient id="quoteGrad2" x1="0" y1="0" x2="14" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+                            </svg>
+                            <p class="testi-text">"His time estimates are always spot-on, and his code is remarkably clean."</p>
+                            <div class="testi-author">
+                                <div class="testi-avatar" style="--av-grad: linear-gradient(135deg, #06b6d4, #3b82f6);">JS</div>
+                                <div>
+                                    <strong>Jane Smith</strong>
+                                    <span>Product Manager</span>
+                                </div>
+                            </div>
+                        </blockquote>
+
+                        <blockquote class="testi-card scroll-reveal" data-stagger="2" data-cursor="pointer">
+                            <div class="testi-card-glow"></div>
+                            <svg class="testi-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2h-2c-1.1 0-2-.9-2-2V8zm-6 0c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2H6c-1.1 0-2-.9-2-2V8z" fill="url(#quoteGrad3)"/>
+                                <defs><linearGradient id="quoteGrad3" x1="0" y1="0" x2="14" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+                            </svg>
+                            <p class="testi-text">"His attention to UI detail is unmatched. Code implementation is always perfectly pixel-aligned."</p>
+                            <div class="testi-author">
+                                <div class="testi-avatar" style="--av-grad: linear-gradient(135deg, #8b5cf6, #ec4899);">RB</div>
+                                <div>
+                                    <strong>Robert Brown</strong>
+                                    <span>Lead Designer</span>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-inner">
+                    <div class="section-header">
+                        <span class="section-index scroll-reveal">04</span>
+                        <h2 class="section-title scroll-reveal">Let's<br><span class="gradient-text">Connect</span></h2>
+                    </div>
+                    <p class="contact-text scroll-reveal">Have a project in mind or just want to say hello? Let's create something extraordinary together.</p>
+                    <div class="contact-links scroll-reveal">
+                        <a href="mailto:budi.dev@email.com" class="contact-link" data-cursor="pointer">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">budi.dev@email.com</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                        <a href="https://github.com/budidev" target="_blank" class="contact-link" data-cursor="pointer">
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">github.com/budidev</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/budidev" target="_blank" class="contact-link" data-cursor="pointer">
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">linkedin.com/in/budidev</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-copy">&copy; 2026 Nandika Haresvara Paryana</span>
+                <span class="footer-note">Crafted with precision</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
